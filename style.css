@@ -1,0 +1,60 @@
+/* Other CSS */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+main {
+  background: #ffbaba;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  min-height: 100px;
+}
+main ul li {
+  text-align: center;
+  margin: 0;
+  list-style: none;
+}
+header {
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.menu {
+  display: inline-block;
+  background-color: lightblue;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+}
+section {
+  background-color: rgb(255, 246, 167);
+  height: 1020px;
+  width: 480px;
+  overflow-y: hidden;
+}
+section:hover {
+  overflow-y: scroll;
+}
+
+#trigger {
+  display: block;
+  background: rgb(60, 255, 0);
+  width: 200px;
+  height: 200px;
+  border: solid black 10px;
+}
+
+.box {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+
+#trigger:hover .box {
+  transform: rotate(45deg);
+
+  transform-style: flat;
+}
