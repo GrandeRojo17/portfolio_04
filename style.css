@@ -1,9 +1,14 @@
 /* Other CSS */
+html{
+  margin: 0;
+  padding: 0;
+}
 body {
-  min-height: 100vh;
+  background-color:rgb(255, 246, 167) ;
+  min-height: 100%;
   display: flex;
   justify-content: center;
-  padding: 5px;
+  
 }
 main {
   background: #ffbaba;
@@ -23,13 +28,26 @@ header {
 }
 
 .menu {
+  height:75px;
+  position:absolute;
+  width:100%;
+  /* from the right */
+  right:1px;
+  bottom: 0;
   display: inline-block;
   background-color: lightblue;
   display: flex;
   padding: 0.5rem;
   justify-content: center;
 }
+.menu button{
+  width: 25%;
+  border-radius: 15px;
+  margin-left:1px;
+  margin-right:1px;
+}
 section {
+  
   background-color: rgb(255, 246, 167);
   height: 1020px;
   width: 480px;
@@ -39,22 +57,3 @@ section:hover {
   overflow-y: scroll;
 }
 
-#trigger {
-  display: block;
-  background: rgb(60, 255, 0);
-  width: 200px;
-  height: 200px;
-  border: solid black 10px;
-}
-
-.box {
-  background-color: green;
-  width: 200px;
-  height: 200px;
-}
-
-#trigger:hover .box {
-  transform: rotate(45deg);
-
-  transform-style: flat;
-}
