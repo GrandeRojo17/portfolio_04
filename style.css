@@ -21,10 +21,21 @@ main ul li {
   margin: 0;
   list-style: none;
 }
+main ul img{
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+}
 header {
   padding: 30px;
   padding-top: 40px;
   padding-bottom: 0px;
+}
+#centerMain{
+  background: #fd4444;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 100px;
 }
 
 .menu {
@@ -41,6 +52,7 @@ header {
   justify-content: center;
 }
 .menu button{
+  outline: none;
   width: 25%;
   border-radius: 15px;
   margin-left:1px;
