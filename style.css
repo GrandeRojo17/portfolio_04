@@ -1,30 +1,53 @@
-/* Other CSS */
-html{
-  margin: 0;
-  padding: 0;
-}
+/* using percents and em I can keep the site 'responsive' vs 'adaptive' */
+/* add variable for repeating colors and sizes. */
+
 body {
-  background-color:rgb(255, 246, 167) ;
+  background-color:rgb(51, 51, 48) ;
   min-height: 100%;
   display: flex;
   justify-content: center;
-  
+  margin: 0;
 }
+
+section {
+  /* had to make the postion relative to bring the Menu div to the bottom. */
+  position: relative;
+  /* the height is calculated at 100% - the (<bannerSize>+<menuFooter>) */
+  height: calc(100% - (75px + 10px));
+  /* Adding 100px of header and 150px of footer */
+  
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(147, 147, 150, 0.5));
+  
+  width: 480px;
+  /* overflow-y: hidden; */
+}
+/* section:hover {
+  overflow-y: scroll;
+} */
 main {
-  background: #ffbaba;
+  width:100%;
+  font-size: 1.5em;
+  background: #c7c7c7;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   min-height: 100px;
+  height: 100%;
+  
 }
 main ul li {
-  text-align: center;
   margin: 0;
+  text-align: center;
   list-style: none;
 }
 main ul img{
   width: 45px;
   height: 45px;
+  
+  
+}
+main ul h4{
   display: inline-flex;
+  
 }
 header {
   padding: 30px;
@@ -37,35 +60,32 @@ header {
   border-bottom-left-radius: 30px;
   height: 100px;
 }
-
+/*Bottom Menu */
 .menu {
+  position: relative;/*Absolute works to bring the menu div down but only when .menu is inside of the 'section' div */
   height:75px;
-  position:absolute;
   width:100%;
-  /* from the right */
-  right:1px;
+  
   bottom: 0;
   display: inline-block;
   background-color: lightblue;
   display: flex;
-  padding: 0.5rem;
+  
+  
   justify-content: center;
 }
 .menu button{
   outline: none;
   width: 25%;
+  height:2rem;
+  padding:5px;
+  padding-top:0;
   border-radius: 15px;
   margin-left:1px;
   margin-right:1px;
-}
-section {
+   
   
-  background-color: rgb(255, 246, 167);
-  height: 1020px;
-  width: 480px;
-  overflow-y: hidden;
+  align-items: center;
 }
-section:hover {
-  overflow-y: scroll;
-}
+
 
