@@ -1,83 +1,132 @@
+<!-- started 4/27/20-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>July Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <title>David Yennerell</title>
 </head>
 
-<body>
-    <section>
-        <header>
-            <img src="./assets/images/Daves_face_01.png" alt="header" width="100%" />
-        </header>
-        <div class="scrollingText"> Hello</div>
-        <main>
-            <ul style="margin-top:0;">
-                <li>
-                    <img src="./assets/images/webDev_icons_footPrintsTrans.png" alt="walkingFeet"
-                        style="padding-top:20px;">
-                    <h4>Increase traffic to your business</h4>
-                </li>
-                <li><img src="./assets/images/webDev_icons_SocialMedias_03-Grouped.PNG" alt="">
-                    <h4>Grow your reach across social media</h4>
-                </li>
-                <li>
-                    <h4>Designed to scale BIG </h4>
-                </li>
-            </ul>
+<body id="boody">
+  <nav>
+    <div class="logo">
+      <img src="assets/images/davidPic_ff_AmusmentPark.jpg" alt="David profile Pic" />
+      <h2>David Yennerell</h2>
+    </div>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/david-yennerell-815a471a2/">LinkedIn</a>
+      </li>
+      <li><a href="portfolio2.html">Portfolio</a></li>
+    </ul>
+  </nav>
 
-            <div class="menu">
-                <!--Portfolio/Skills/Hire Me-->
-                <!--Add three buttons-->
-                <button type="button">Portfolio</button>
-                <button>Skills</button>
-                <button>Hire Me</button>
+  <!-- <div class="notification-container show" id="notifiacation-contianer">
+      <p>Click my icon to get to the menu</p>
+    </div> -->
+  <!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ---- -->
+  <header id="banner">
+    <button id="toggle" class="toggle">
 
-            </div>
-        </main>
+      <i class="fa fa-hamburger fa-2x"></i>
 
-    </section>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-	// ]]>
-    </script>
+    </button>
+    <h1>Making Websites Easier</h1>
+    <p>"CUSTOM SITES FOR YOUR BUSINESS"</p>
+
+    <button class="cta-btn" id="open">Contact Me!</button>
+  </header>
+  <div class="full-container">
+    <!--BIO SECTION-->
+
+    <div class="container">
+
+
+
+      <img src="./assets/images/snapchat_bitmoji_clear_transparent_faceOnly_cropped.png" alt="" srcset="">
+      <h2>Who am I?</h2>
+      <p>
+        I am young and talented computer nerd who enjoys creating as many
+        things as humanily possible. I will experiment with most things I can
+        get my hands on ranging from computers to my garden. I spend my time
+        learning new things and planning for my future.
+      </p>
+      <p>
+        Over the years I have had many hobbies from gardening to building
+        computers and even graphic arts. Although now, I enjoy designing
+        applications for the web, broadening my communication skills, and
+        building applications to make life easier. I find the "new frontier"
+        that is web development a fun and worthwhile experience.
+      </p>
+
+      <h2>What are my skills?</h2>
+      <ul>
+        <li>Marketing</li>
+        <li>Problem Solving</li>
+        <li>Working with teams/groups</li>
+        <li>Full-Stack Web Developement</li>
+      </ul>
+
+      <h2>What are my goals?</h2>
+      <ul>
+        <li>Design amazing websites that function</li>
+        <li>Help businesses connect with the community using code</li>
+        <li>Maintain a healthy and fulfilling life style</li>
+        <li>Teach people valuable life skills</li>
+      </ul>
+
+      <p>
+        There is much more on the way so stay tuned and check back in soon!
+        Thank you for taking the time to learn more about me and fill free to
+        email me at through
+        <a href="GrandeKnowledge.com">David.yennerell@gmail.com</a> for
+        business inquiries or just to chat.
+      </p>
+    </div>
+
+  </div>
+  <!-- Modal -->
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <button class="close-btn" id="close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3>
+          Contact Me @
+          <a href="https://www.linkedin.com/in/david-yennerell-815a471a2/">linkedIn</a>
+          or below
+        </h3>
+      </div>
+      <div class="modal-content">
+        <p><strong>Want to get in contact with me?</strong></p>
+        <form class="modal-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" class="form-input" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" class="form-input" />
+          </div>
+
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>
