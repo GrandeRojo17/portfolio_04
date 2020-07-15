@@ -7,13 +7,14 @@ https://granderojo17.github.io/PersonalizedWebSite02/
 
 <h2>Table of Contents</h2>
 
-*[Installation]('#installation')
-* Usage
+- [Installation]('#installation')
 
-* License
-* Contributing
-* Tests
-* Questions
+- [Usage]('#Usage')
+
+- [License]('#License')
+- [Contributing]('#contributing')
+- [Tests]('#Tests')
+- [Questions]("#Questions")
 
 
 <h4>Installation </h4>

@@ -96,7 +96,7 @@ nav ul li a:hover {
 header {
   padding: 75px;
   background-image: url(./images/blue_water.jpg);
-  background-size: 500px;
+  background-size: 100%;
   /* background-color: var(--banner-color); */
   /* background: linear-gradient(
     90deg,
@@ -112,6 +112,7 @@ header {
   height: 75%;
   width: 100%;
 }
+
 header h1 {
   color: var(--fourthChoice-color);
   font-size: 300%;
