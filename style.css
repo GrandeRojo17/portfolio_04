@@ -2,21 +2,24 @@
 /* add variable for repeating colors and sizes. */
 
 body {
-  background-color:rgb(51, 51, 48) ;
+  background-color:#4c4e48 ;
   min-height: 100%;
   display: flex;
   justify-content: center;
   margin: 0;
 }
-
+/*Section is the main content container*/
 section {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+  background-image:url(./assets/images/green-ferns.jpg) ;
+  background-size:100px 100px ;
   /* had to make the postion relative to bring the Menu div to the bottom. */
   position: relative;
   /* the height is calculated at 100% - the (<bannerSize>+<menuFooter>) */
   height: calc(100% - (75px + 10px));
   /* Adding 100px of header and 150px of footer */
   
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(147, 147, 150, 0.5));
+  
   
   width: 480px;
   /* overflow-y: hidden; */
@@ -27,7 +30,9 @@ section {
 main {
   width:100%;
   font-size: 1.5em;
-  background: #c7c7c7;
+  background: #354A18;
+  /*text color*/
+  color:whitesmoke;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   min-height: 100px;
@@ -49,7 +54,17 @@ main ul h4{
   display: inline-flex;
   
 }
+.scrollingText{
+  position: absolute;
+  left:50%;
+  background: blue;
+  
+}
+.scrollingText:hover{
+  transform: translate(45px);
+}
 header {
+  
   padding: 30px;
   padding-top: 40px;
   padding-bottom: 0px;
@@ -68,13 +83,14 @@ header {
   
   bottom: 0;
   display: inline-block;
-  background-color: lightblue;
+  background-color: #354A18;
   display: flex;
   
   
   justify-content: center;
 }
 .menu button{
+  background: #F9EBF3;
   outline: none;
   width: 25%;
   height:2rem;
