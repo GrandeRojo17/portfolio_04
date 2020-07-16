@@ -97,7 +97,7 @@ header {
   padding: 75px;
   background-image: url(./images/blue_water.jpg);
   background-size: 100%;
-  /* background-color: var(--banner-color); */
+  
   /* background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%, 
@@ -114,10 +114,10 @@ header {
 }
 
 header h1 {
-  color: var(--fourthChoice-color);
+  color: whitesmoke;
+  
   font-size: 300%;
-  /* padding:10px; */
-  /* width: 100%vw; */
+
 }
 header p {
   color: var(--fourthChoice-color);
@@ -156,7 +156,7 @@ button:focus {
   background-color: var(--secondary-color);
 }
 .container {
-  border: 1px solid blanchedalmond;
+  
   text-align: center;
   color: rgb(233, 233, 233);
   background-color: rgba(9, 9, 133, 0.3);
